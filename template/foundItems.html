@@ -1,0 +1,15 @@
+
+<div class="row results">
+    <div class="col-sm-6 col-md-4" ng-repeat='item in menuItems'>
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>{{item.name}}</h3>
+          <p> <strong>Description</strong>: {{item.description}}</p>
+          <button class='btn btn-danger' ng-click='onRemove({index: $index})'>
+              don't want this one
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
