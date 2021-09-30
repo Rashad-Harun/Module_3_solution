@@ -3,8 +3,10 @@
     <div class="col-sm-6 col-md-4" ng-repeat='item in menuItems'>
       <div class="thumbnail">
         <div class="caption">
+          <strong><h4>( {{item.short_name}} )</h4></strong>
           <h3>{{item.name}}</h3>
           <p> <strong>Description</strong>: {{item.description}}</p>
+          <span><strong>Price:</strong> ( S {{item.price_small | currency}} ) - ( L {{item.price_large | currency}} )</span><br>
           <button class='btn btn-danger' ng-click='onRemove({index: $index})'>
               don't want this one
             </button>
